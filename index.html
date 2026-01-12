@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IoT Temperature & Humidity Monitoring</title>
+
+    <style>
+        body {
+            background-color: yellow;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .container {
+            background: white;
+            width: 420px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .value {
+            font-size: 22px;
+            margin: 15px 0;
+        }
+
+        button {
+            padding: 10px 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>IoT Temperature & Humidity Monitor</h2>
+
+    <div class="value">
+        🌡️ Temperature: <span id="temp">--</span> °C
+    </div>
+
+    <div class="value">
+        💧 Humidity: <span id="hum">--</span> %
+    </div>
+
+    <button onclick="runSimulation()">Run Simulation</button>
+</div>
+
+<script>
+function runSimulation() {
+    // Simulate sensor values
+    let temperature = Math.floor(Math.random() * 15) + 20; // 20–35 °C
+    let humidity = Math.floor(Math.random() * 40) + 40;    // 40–80 %
+
+    document.getElementById("temp").innerText = temperature;
+    document.getElementById("hum").innerText = humidity;
+}
+</script>
+
+</body>
+</html>
