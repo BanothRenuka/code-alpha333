@@ -1,0 +1,15 @@
+{
+  "name": "iot-prototype-backend",
+  "version": "1.0.0",
+  "description": "IoT Prototype Backend using Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Student",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}
